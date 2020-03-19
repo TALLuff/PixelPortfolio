@@ -43,11 +43,13 @@ const TechStack = () => {
     });
   };
 
+  const smallWindow = window.innerWidth <= 1200;
+
   return (
     <TechContainer>
       <LeftTechContainer>
         {techKeys.map((techKey, index) => {
-          if (index % 2 === 0) {
+          if (index % 2 === 0 || smallWindow) {
             let alternate = index + (1 % 2);
             return (
               <Parallax y={[-20, 20]} key={techKey}>
@@ -75,7 +77,7 @@ const TechStack = () => {
       </LeftTechContainer>
       <RightTechContainer>
         {techKeys.map((techKey, index) => {
-          if (index % 2 !== 0) {
+          if (index % 2 !== 0 && !smallWindow) {
             let alternate = index + (1 % 2);
             return (
               <Parallax y={[-10, 10]} key={techKey}>

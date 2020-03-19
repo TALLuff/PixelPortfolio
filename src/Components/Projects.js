@@ -36,10 +36,12 @@ const Projects = () => {
     }
   ];
 
+  const smallWindow = window.innerWidth <= 1200;
+
   return (
     <ProjectsContainer>
       {projects.map(({ projectName, description, image }, index) => {
-        if (index % 2 === 0) {
+        if (index % 2 === 0 || smallWindow) {
           return (
             <ProjectLayoutLeft key={projectName}>
               <Parallax y={[-20, 20]}>

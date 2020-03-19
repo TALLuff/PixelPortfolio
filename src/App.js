@@ -12,7 +12,7 @@ import Mountains from "./Components/Mountains";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
       <ParallaxProvider>
         <Clouds className="clouds" />
         <Mountains className="mountains" />

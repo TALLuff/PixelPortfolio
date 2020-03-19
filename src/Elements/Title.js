@@ -9,4 +9,5 @@ export const TitleContainer = styled.div`
 
 export const TitleGif = styled.img`
   z-index: 100;
+  max-width: 80%;
 `;

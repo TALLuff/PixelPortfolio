@@ -4,14 +4,19 @@ import DarkBG from "../Images/DarkBGSmall.png";
 import LightBG from "../Images/LightBGSmall.png";
 
 export const AboutContainer = styled.div`
-  max-width: 40em;
-  width: 50%;
+  width: 40em;
+  max-width: 70%;
   border: 28px solid transparent;
   border-image: url(${BorderImage}) 40 round;
   margin: 0 auto 2em auto;
   padding: 0;
   position: relative;
   top: 8em;
+  @media (max-width: 1200px) {
+    border: 14px solid transparent;
+    border-image: url(${BorderImage}) 40 round;
+    margin: 0 auto 5em auto;
+  }
 `;
 
 export const AboutImage = styled.img`
@@ -26,10 +31,14 @@ export const AboutHeader = styled.div`
   top: 12em;
   width: 15em;
   z-index: 100;
+  @media (max-width: 1200px) {
+    border: 15px solid transparent;
+    border-image: url(${BorderImage}) 40 round;
+  }
 `;
 
 export const AboutTitle = styled.h2`
-  font-size: 3rem;
+  font-size: 3em;
   margin: 0;
   color: rgb(245, 235, 230);
 `;
@@ -43,6 +52,9 @@ export const AboutPara = styled.div`
   z-index: 100;
   margin: 0;
   padding: 2em 1em 1em 1em;
+  @media (max-width: 1200px) {
+    background-size: 50px;
+  }
 `;
 
 export const NestedHeader = styled.div`
@@ -52,4 +64,7 @@ export const NestedHeader = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 0.5em 0.5em 0.5em;
+  @media (max-width: 1200px) {
+    background-size: 50px;
+  }
 `;

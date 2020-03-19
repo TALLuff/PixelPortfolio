@@ -3,11 +3,20 @@
   src: url("./Fonts/OpenMine.ttf");
 }
 
+.App {
+  overflow-x: unset;
+}
+
 body {
   margin: 0;
   font-family: "freePixel";
   overflow-x: hidden;
   background-image: url("./Images/Sky.png");
+}
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 0.7em;
+  }
 }
 
 .mountains {
@@ -18,19 +27,19 @@ body {
 
 .mountainWrapper1 {
   position: absolute;
-  top: 550em;
+  top: 600em;
 }
 .mountainWrapper2 {
   position: absolute;
-  top: 550em;
+  top: 600em;
 }
 .mountainWrapper3 {
   position: absolute;
-  top: 550em;
+  top: 600em;
 }
 .mountainWrapper4 {
   position: absolute;
-  top: 550em;
+  top: 600em;
 }
 
 .mountainsImages {
