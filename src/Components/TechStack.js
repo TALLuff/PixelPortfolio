@@ -52,7 +52,7 @@ const TechStack = () => {
           if (index % 2 === 0 || smallWindow) {
             let alternate = index + (1 % 2);
             return (
-              <Parallax y={[-20, 20]} key={techKey}>
+              <Parallax y={[-20, 20]} key={techKey} disabled={smallWindow}>
                 <BobAnima duration={`${alternate * 2}s`}>
                   <Propeller src={require("../Images/SlowPropeller.gif")} />
                   <StackContainer>
