@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "freePixel";
+  src: url("./Fonts/OpenMine.ttf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: "freePixel";
+  overflow-x: hidden;
+  background-image: url("./Images/Sky.png");
+}
+
+.mountains {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+
+.mountainWrapper1 {
+  position: absolute;
+  top: 550em;
+}
+.mountainWrapper2 {
+  position: absolute;
+  top: 550em;
+}
+.mountainWrapper3 {
+  position: absolute;
+  top: 550em;
+}
+.mountainWrapper4 {
+  position: absolute;
+  top: 550em;
+}
+
+.mountainsImages {
+  height: 100%;
+}
+
+.mountains1 {
+  background-image: url("./Images/Mountains-1.png");
+  width: 100vw;
+  height: 500px;
+}
+.mountains2 {
+  background-image: url("./Images/Mountains-2.png");
+  width: 100vw;
+  height: 500px;
+}
+.mountains3 {
+  background-image: url("./Images/Mountains-3.png");
+  width: 100vw;
+  height: 500px;
+}
+.mountains4 {
+  background-image: url("./Images/Mountains-4.png");
+  width: 100vw;
+  height: 500px;
+}
+
+/*
+*/
+.clouds {
+  position: absolute;
+  top: 0;
+  margin: 0;
+}
+
+.cloudWrapper1 {
+  position: absolute;
+  top: 0;
+}
+.cloudWrapper2 {
+  position: absolute;
+  top: 0;
+}
+.cloudWrapper3 {
+  position: absolute;
+  top: 0;
+}
+
+.cloudsImages {
+  height: 100%;
+}
+
+.clouds1 {
+  background-image: url("./Images/Clouds-1.png");
+  width: 100vw;
+  height: 500px;
+}
+.clouds2 {
+  background-image: url("./Images/Clouds-2.png");
+  width: 100vw;
+  height: 500px;
+}
+.clouds3 {
+  background-image: url("./Images/Clouds-3.png");
+  width: 100vw;
+  height: 500px;
 }
