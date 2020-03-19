@@ -15,7 +15,6 @@ to {
 export const BobAnima = styled.div`
   position: relative;
   animation-timing-function: ease-in-out;
-  /* animation-duration: 6s; */
   animation-duration: ${props => props.duration};
   animation-name: ${bob};
   animation-iteration-count: infinite;

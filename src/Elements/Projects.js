@@ -44,11 +44,11 @@ export const ProjectName = styled.div`
   color: black;
   text-align: center;
   font-size: 3em;
-  border: 200px solid transparent;
+  border: 200px solid white;
   border-image: url(${BorderImageSign}) 300 round;
   z-index: 100;
   @media (max-width: 1200px) {
-    border: 100px solid transparent;
+    border: 100px solid white;
     border-image: url(${BorderImageSign}) 300 round;
   }
 `;
@@ -67,13 +67,13 @@ export const NestedName = styled.h2`
 export const ProjectDescription = styled.div`
   position: relative;
   top: 3em;
-  border: 60px solid transparent;
+  border: 60px solid white;
   border-image: url(${BorderImageRock}) 100 repeat;
   width: 80em;
   max-width: 60vw;
   z-index: -1;
   @media (max-width: 1200px) {
-    border: 30px solid transparent;
+    border: 30px solid white;
     border-image: url(${BorderImageRock}) 100 round;
   }
 `;
@@ -92,10 +92,10 @@ export const NestedDescription = styled.p`
 export const ProjectImage = styled.img`
   width: 80em;
   max-width: 80vw;
-  border: 28px solid transparent;
+  border: 28px solid white;
   border-image: url(${BorderImageWood}) 40 round;
   @media (max-width: 1200px) {
-    border: 14px solid transparent;
+    border: 14px solid white;
     border-image: url(${BorderImageWood}) 40 round;
     position: relative;
     top: 5em;

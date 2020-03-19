@@ -19,7 +19,7 @@ export const ContactForm = styled.form`
 `;
 
 export const FormLabel = styled.div`
-  border: 60px solid transparent;
+  border: 60px solid white;
   border-image: url(${Sign2}) 100 round;
   display: flex;
   position: relative;
@@ -41,7 +41,7 @@ export const NestedLabel = styled.label`
 `;
 
 export const FormInput = styled.div`
-  border: 200px solid transparent;
+  border: 200px solid white;
   border-image: url(${ContactInput}) 300 round;
   margin: 0 auto;
   background-color: rgb(0, 0, 0, 0);
@@ -77,7 +77,7 @@ export const NestedEmail = styled.input`
 `;
 
 export const FormSubmit = styled.div`
-  border: 60px solid transparent;
+  border: 60px solid white;
   border-image: url(${Sign1}) 100 round;
   display: flex;
   position: relative;

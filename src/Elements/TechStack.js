@@ -35,13 +35,13 @@ export const StackContainer = styled.div`
 export const StackTitle = styled.div`
   position: relative;
   top: 20px;
-  border: 30px solid transparent;
+  border: 30px solid white;
   border-image: url(${BorderImageWood}) 40 round;
   margin: 0 auto;
   z-index: 100;
   width: 20em;
   @media (max-width: 1200px) {
-    border: 15px solid transparent;
+    border: 15px solid white;
     border-image: url(${BorderImageWood}) 40 repeat;
   }
 `;
@@ -61,13 +61,13 @@ export const NestedStackTitle = styled.h3`
 
 export const TechTitle = styled.div`
   margin: 0;
-  border: 60px solid transparent;
+  border: 60px solid white;
   border-image: url(${BorderImageStack}) 100 repeat;
   position: relative;
   top: ${props => `-${props.position * 45}px`};
   min-width: 18em;
   @media (max-width: 1200px) {
-    border: 30px solid transparent;
+    border: 30px solid white;
     border-image: url(${BorderImageStack}) 100 repeat;
     top: ${props => `-${props.position * 25}px`};
   }
