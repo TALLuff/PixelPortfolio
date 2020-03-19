@@ -70,7 +70,7 @@ export const ProjectDescription = styled.div`
   border: 60px solid transparent;
   border-image: url(${BorderImageRock}) 100 repeat;
   width: 80em;
-  max-width: 40vw;
+  max-width: 60vw;
   z-index: -1;
   @media (max-width: 1200px) {
     border: 30px solid transparent;
