@@ -6,14 +6,14 @@ import LightBG from "../Images/LightBGSmall.png";
 export const AboutContainer = styled.div`
   width: 40em;
   max-width: 70%;
-  border: 28px solid transparent;
+  border: 28px solid white;
   border-image: url(${BorderImage}) 40 round;
   margin: 0 auto 2em auto;
   padding: 0;
   position: relative;
   top: 8em;
   @media (max-width: 1200px) {
-    border: 14px solid transparent;
+    border: 14px solid white;
     border-image: url(${BorderImage}) 40 round;
     margin: 0 auto 5em auto;
   }
@@ -24,7 +24,7 @@ export const AboutImage = styled.img`
 `;
 
 export const AboutHeader = styled.div`
-  border: 30px solid transparent;
+  border: 30px solid white;
   border-image: url(${BorderImage}) 40 round;
   margin: 0 auto;
   position: relative;
@@ -32,7 +32,7 @@ export const AboutHeader = styled.div`
   width: 15em;
   z-index: 100;
   @media (max-width: 1200px) {
-    border: 15px solid transparent;
+    border: 15px solid white;
     border-image: url(${BorderImage}) 40 round;
   }
 `;
