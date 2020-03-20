@@ -2,13 +2,16 @@ import styled, { keyframes } from "styled-components";
 
 const bob = keyframes`
 from {
-    top: 0px;
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 50% {
-    top: 50px;
+    margin-top: 50px;
+    margin-bottom: 0px;
 }
 to {
-    top: 0px;
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 `;
 
@@ -18,4 +21,5 @@ export const BobAnima = styled.div`
   animation-duration: ${props => props.duration};
   animation-name: ${bob};
   animation-iteration-count: infinite;
+  top: 50px;
 `;
