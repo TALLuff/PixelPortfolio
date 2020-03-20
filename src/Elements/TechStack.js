@@ -6,19 +6,22 @@ import LightBG from "../Images/LightBGSmall.png";
 
 export const TechContainer = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
   z-index: 100;
   width: 30em;
-  margin: 10em auto 10em auto;
+  margin: 10em auto;
+  padding: 0;
 `;
 
 export const LeftTechContainer = styled(TechContainer)`
   flex-direction: column;
+  margin: 0 auto;
 `;
 
 export const RightTechContainer = styled(TechContainer)`
   flex-direction: column;
+  margin: 0 auto;
 `;
 
 export const StackContainer = styled.div`

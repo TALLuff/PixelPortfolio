@@ -9,6 +9,7 @@ export const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 `;
 
 export const ProjectLayoutLeft = styled.div`
@@ -69,12 +70,13 @@ export const ProjectDescription = styled.div`
   top: 3em;
   border: 60px solid white;
   border-image: url(${BorderImageRock}) 100 repeat;
-  width: 80em;
-  max-width: 60vw;
+  width: 60em;
+  max-width: 40vw;
   z-index: -1;
   @media (max-width: 1200px) {
     border: 30px solid white;
     border-image: url(${BorderImageRock}) 100 round;
+    max-width: 60vw;
   }
 `;
 
