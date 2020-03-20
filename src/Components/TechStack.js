@@ -43,7 +43,7 @@ const TechStack = () => {
     });
   };
 
-  const smallWindow = window.innerWidth <= 1200;
+  const smallWindow = window.innerWidth <= 900;
 
   return (
     <TechContainer>
@@ -81,7 +81,7 @@ const TechStack = () => {
             let alternate = index + (1 % 2);
             return (
               <Parallax y={[-10, 10]} key={techKey}>
-                <BobAnima duration={`${alternate * 2}s`}>
+                <BobAnima duration={`${alternate * 2}s`} className="bobAnima">
                   <Propeller src={require("../Images/SlowPropeller.gif")} />
                   <StackContainer>
                     <StackTitle>

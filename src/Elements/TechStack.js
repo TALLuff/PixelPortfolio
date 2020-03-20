@@ -7,11 +7,14 @@ import LightBG from "../Images/LightBGSmall.png";
 export const TechContainer = styled.div`
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
   z-index: 100;
   width: 30em;
   margin: 10em auto;
   padding: 0;
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
 `;
 
 export const LeftTechContainer = styled(TechContainer)`
@@ -30,7 +33,7 @@ export const StackContainer = styled.div`
   align-items: center;
   flex-direction: column;
   margin: 3em;
-  @media (max-width: 1200px) {
+  @media (max-width: 900px) {
     margin: 0 3em;
   }
 `;
@@ -98,6 +101,9 @@ export const Propeller = styled.img`
   margin: 0 auto;
   @media (max-width: 1200px) {
     width: 50%;
-    top: 3.2em;
+    top: 5.5em;
+  }
+  @media (max-width: 900px) {
+    top: 3em;
   }
 `;

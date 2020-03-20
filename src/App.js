@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     if (animPaused) {
-      setTimeout(() => setAnimPaused(false), 800);
+      setTimeout(() => setAnimPaused(false), 600);
     }
 
     const bobAnima = document.getElementsByClassName("bobAnima");
