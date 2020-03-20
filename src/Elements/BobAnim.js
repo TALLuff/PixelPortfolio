@@ -2,16 +2,16 @@ import styled, { keyframes } from "styled-components";
 
 const bob = keyframes`
 from {
-    margin-top: 0px;
-    margin-bottom: 50px;
+    padding-top: 0px;
+    padding-bottom: 50px;
 }
 50% {
-    margin-top: 50px;
-    margin-bottom: 0px;
+    padding-top: 50px;
+    padding-bottom: 0px;
 }
 to {
-    margin-top: 0px;
-    margin-bottom: 50px;
+    padding-top: 0px;
+    padding-bottom: 50px;
 }
 `;
 
