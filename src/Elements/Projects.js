@@ -41,7 +41,7 @@ export const LayoutRightInfo = styled(LayoutLeftInfo)`
   }
 `;
 
-export const ProjectName = styled.div`
+export const ProjectNameRight = styled.div`
   color: black;
   text-align: center;
   font-size: 3em;
@@ -51,6 +51,13 @@ export const ProjectName = styled.div`
   @media (max-width: 1200px) {
     border: 100px solid white;
     border-image: url(${BorderImageSign}) 300 round;
+  }
+`;
+
+export const ProjectNameLeft = styled(ProjectNameRight)`
+  @media (min-width: 1200px) {
+    position: relative;
+    top: -1em;
   }
 `;
 

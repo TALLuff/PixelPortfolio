@@ -1,7 +1,8 @@
 import React from "react";
 import {
   ProjectsContainer,
-  ProjectName,
+  ProjectNameLeft,
+  ProjectNameRight,
   NestedName,
   ProjectDescription,
   NestedDescription,
@@ -48,9 +49,9 @@ const Projects = () => {
                 <LayoutLeftInfo>
                   <Parallax y={[-5, 5]}>
                     <BobAnima duration="5s" className="bobAnima">
-                      <ProjectName>
+                      <ProjectNameLeft>
                         <NestedName>{projectName}</NestedName>
-                      </ProjectName>
+                      </ProjectNameLeft>
                     </BobAnima>
                   </Parallax>
                   <ProjectDescription>
@@ -67,9 +68,9 @@ const Projects = () => {
             <LayoutRightInfo>
               <Parallax y={[5, -5]}>
                 <BobAnima duration="5s" className="bobAnima">
-                  <ProjectName>
+                  <ProjectNameRight>
                     <NestedName>{projectName}</NestedName>
-                  </ProjectName>
+                  </ProjectNameRight>
                 </BobAnima>
               </Parallax>
               <Parallax y={[-20, 20]}>

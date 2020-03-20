@@ -16,6 +16,25 @@ body {
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .mountainWrapper1 {
+    position: absolute;
+    top: 700em;
+  }
+  .mountainWrapper2 {
+    position: absolute;
+    top: 700em;
+  }
+  .mountainWrapper3 {
+    position: absolute;
+    top: 700em;
+  }
+  .mountainWrapper4 {
+    position: absolute;
+    top: 700em;
+  }
+}
+
 .mountains {
   position: absolute;
   bottom: 0;
@@ -24,19 +43,19 @@ body {
 
 .mountainWrapper1 {
   position: absolute;
-  top: 700em;
+  top: 600em;
 }
 .mountainWrapper2 {
   position: absolute;
-  top: 700em;
+  top: 600em;
 }
 .mountainWrapper3 {
   position: absolute;
-  top: 700em;
+  top: 600em;
 }
 .mountainWrapper4 {
   position: absolute;
-  top: 700em;
+  top: 600em;
 }
 
 .mountainsImages {
