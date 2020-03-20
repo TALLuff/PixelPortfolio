@@ -53,7 +53,7 @@ const TechStack = () => {
             let alternate = index + (1 % 2);
             return (
               <Parallax y={[-20, 20]} key={techKey}>
-                <BobAnima duration={`${alternate * 2}s`}>
+                <BobAnima duration={`${alternate * 2}s`} className="bobAnima">
                   <Propeller src={require("../Images/SlowPropeller.gif")} />
                   <StackContainer>
                     <StackTitle>

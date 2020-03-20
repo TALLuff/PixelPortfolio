@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Navbar from "./Components/Navbar";
 import Clouds from "./Components/Clouds";
@@ -10,8 +10,25 @@ import Contact from "./Components/Contact";
 import Mountains from "./Components/Mountains";
 
 function App() {
+  const [animPaused, setAnimPaused] = useState(false);
+
+  useEffect(() => {
+    if (animPaused) {
+      setTimeout(() => setAnimPaused(false), 200);
+    }
+
+    const bobAnima = document.getElementsByClassName("bobAnima");
+    for (let i = 0; i < bobAnima.length; i++) {
+      bobAnima[i].style.animationPlayState = animPaused ? "paused" : "running";
+    }
+  }, [animPaused]);
+
   return (
-    <div className="App">
+    <div
+      className="App"
+      onWheel={e => setAnimPaused(true)}
+      onTouchMove={e => setAnimPaused(true)}
+    >
       {/* <Navbar /> */}
       <ParallaxProvider>
         <Clouds className="clouds" />
@@ -19,7 +36,7 @@ function App() {
         <Title />
         <About />
         <Projects />
-        <TechStack />
+        <TechStack animPaused={animPaused} />
         {/* <Contact /> */}
       </ParallaxProvider>
     </div>

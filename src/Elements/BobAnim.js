@@ -21,5 +21,6 @@ export const BobAnima = styled.div`
   animation-duration: ${props => props.duration};
   animation-name: ${bob};
   animation-iteration-count: infinite;
+  animation-play-state: ${props => (props.animPaused ? "paused" : "play")};
   top: 50px;
 `;

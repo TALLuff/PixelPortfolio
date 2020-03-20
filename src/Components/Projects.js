@@ -47,7 +47,7 @@ const Projects = () => {
               <Parallax y={[-20, 20]}>
                 <LayoutLeftInfo>
                   <Parallax y={[-5, 5]}>
-                    <BobAnima duration="5s">
+                    <BobAnima duration="5s" className="bobAnima">
                       <ProjectName>
                         <NestedName>{projectName}</NestedName>
                       </ProjectName>
@@ -66,7 +66,7 @@ const Projects = () => {
           <ProjectLayoutRight key={projectName}>
             <LayoutRightInfo>
               <Parallax y={[5, -5]}>
-                <BobAnima duration="5s">
+                <BobAnima duration="5s" className="bobAnima">
                   <ProjectName>
                     <NestedName>{projectName}</NestedName>
                   </ProjectName>
